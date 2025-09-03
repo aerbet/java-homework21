@@ -4,7 +4,7 @@ public enum Suits {
     CLOVERS("♣"),
     PIKES("♠");
 
-    private String title;
+    private final String title;
 
     Suits(String title) {
         this.title = title;

@@ -1,16 +1,24 @@
 import java.util.Random;
 
 public class Card {
-    protected String value;
+    protected Values value;
     protected Suits suit;
 
-    protected Card(String value, Suits suit) {
+    protected Card(Values value, Suits suit) {
         this.value = value;
         this.suit = suit;
     }
 
+    public Values getValue() {
+        return value;
+    }
+
+    public Suits getSuit() {
+        return suit;
+    }
+
     @Override
     public String toString() {
-        return value + suit;
+        return value.toString() + suit.toString();
     }
 }
