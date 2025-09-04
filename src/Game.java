@@ -24,9 +24,9 @@ public class Game {
                 System.out.println("Карты с таким индексом не существует");
                 break;
             }
+            Card old = hand.handCards[index];
+            deck.putBackCard(old);
             hand.changeCard(index, deck.takeCard());
         }
-
-
     }
 }

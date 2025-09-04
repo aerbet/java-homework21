@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 
 public class Deck {
@@ -76,5 +77,9 @@ public class Deck {
                 deck[index++] = new Card(value, suit);
             }
         }
+    }
+
+    public void printDeck() {
+        System.out.println(Arrays.toString(deck));
     }
 }
